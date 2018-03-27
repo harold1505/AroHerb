@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "193110530806",
+    "firebase_url": "https://aroherb-c6377.firebaseio.com",
+    "project_id": "aroherb-c6377",
+    "storage_bucket": "aroherb-c6377.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193110530806:android:9cf31bade85e9461",
+        "android_client_info": {
+          "package_name": "com.example.android.aeroherb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193110530806-7a6nq7d45hf6m69hpgl4q807vr9inmqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.aeroherb",
+            "certificate_hash": "ade7817d456dbac727c555e610b4312873d2bf35"
+          }
+        },
+        {
+          "client_id": "193110530806-f045j4ilp7p6fef536bvfmnk1umjhnfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDai7Sck6w1v_6aAddwkaPSFJmT_2lRFO4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193110530806-f045j4ilp7p6fef536bvfmnk1umjhnfq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

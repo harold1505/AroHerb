@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/cardlayout">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionText"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Here comes the question"
+               android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+               android:textColor="#000000"
+                android:layout_weight="0.8"/>
+            <TextView
+                android:id="@+id/submittedText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submitted by"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_weight="0.2"
+                />
+            <TextView
+                android:id="@+id/keyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key value"
+                android:visibility="gone"/>
+        </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
