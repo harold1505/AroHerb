@@ -44,5 +44,30 @@ public class PostQuestion extends AppCompatActivity {
         String key = databaseReference.getKey();
         Question question = new Question(name,que,key);
         databaseReference.setValue(question);
+        if(que.equals("My papaya plant has small, dark raised spots. What to do?")){
+        Answer ansobj = new Answer("Bot","This is due to bacterial infection. Use R23 Pesticide");
+        databaseReference=FirebaseDatabase.getInstance().getReference().child("FAQ").child(key).child("Answers");
+        databaseReference.push().setValue(ansobj);}
+        else if(que.equals("My banana tree has curly leaves. What to do?")){
+            Answer ansobj = new Answer("Bot","Use proper fertilizer and remove the infected leaves.");
+            databaseReference=FirebaseDatabase.getInstance().getReference().child("FAQ").child(key).child("Answers");
+            databaseReference.push().setValue(ansobj);}
+       else if(que.equals("The jasmine plant has stunned foliage. What to do?")){
+            Answer ansobj = new Answer("Bot","Use fungicide to prevent spreading");
+            databaseReference=FirebaseDatabase.getInstance().getReference().child("FAQ").child(key).child("Answers");
+            databaseReference.push().setValue(ansobj);}
+        else if(que.equals("Cucumber has yellow spots and streaks. What to do?")){
+            Answer ansobj = new Answer("Bot","Remove the virus affected plant to prevent spreading.");
+            databaseReference=FirebaseDatabase.getInstance().getReference().child("FAQ").child(key).child("Answers");
+            databaseReference.push().setValue(ansobj);}
+       else if(que.equals("Neem tree has dried leaf tips. What to do?")){
+            Answer ansobj = new Answer("Bot","Remove infected leaves and avoid overwatering");
+            databaseReference=FirebaseDatabase.getInstance().getReference().child("FAQ").child(key).child("Answers");
+            databaseReference.push().setValue(ansobj);}
+        else if(que.equals("Mango tree produces disformed fruit. What to do?")){
+            Answer ansobj = new Answer("Bot","Add fertilizer regularly to produce healthy fruits");
+            databaseReference=FirebaseDatabase.getInstance().getReference().child("FAQ").child(key).child("Answers");
+            databaseReference.push().setValue(ansobj);}
+
     }
 }

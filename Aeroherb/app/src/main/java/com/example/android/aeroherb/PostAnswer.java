@@ -9,7 +9,6 @@ public class PostAnswer extends AppCompatActivity {
     android.widget.EditText ename,eans;
     android.widget.Button bsub;
 
-
     public PostAnswer(){
 
     }
@@ -85,11 +84,14 @@ public class PostAnswer extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(AnswerHolder holder, int position, final com.example.android.aeroherb.Answer model) {
-                final String answer = model.getAns();
-                final String name=model.getName();
-                holder.answer.setText(answer);
-                String n="Answered by: "+name;
-                holder.name.setText(n);
+                final String answer;
+                final String name;
+
+                    answer = model.getAns();
+                    name = model.getName();
+                    holder.answer.setText(answer);
+                    String n = "Answered by: " + name;
+                    holder.name.setText(n);
 
             }
 
